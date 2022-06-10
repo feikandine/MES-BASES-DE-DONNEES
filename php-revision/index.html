@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
-    <bod<y>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css"> -->
+   
         <h1>Contact</h1>
+    <body>
         <form action="process-form.php" method="post">
             <label for="">Name</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required >
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
             <label for="priority">Priority</label>
@@ -39,8 +40,18 @@
             <br>
             <button>Send</button>
             
+            
 
         </form>
+        <form action="data-display.php" method="post">
+            <button>Shwo Entries</button>
+        </form>
         </body>
-
+        <form action="data-update.php">
+            <button>Update</button>
+        </form>
+        <form action="data-delete.php">
+            <button>Delete</button>
+        </form>
+        
 </html>
